@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    height: 500px;
+}
+.header2{
+    background-color: darkgray;
+    padding: 10px 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.logo{
+    width: 53px;
+    margin-right: auto;
+}
+.logoName{
+    margin-right: 950px;
+    font-size: 18px;
+    display: inline;
+}
+.nav__links{
+    list-style: none; /**/
+    font-family: cursive;
+}
+.nav__links li{
+    display: inline-block; /*alt alta değil yan yana*/
+    padding: 10px 20px;
+}
+.nav__links li a{
+    transition: all 0.3s;
+}
+.nav__links li a:hover{
+    color: green
+    
+}
+.img{
+    width: 100%;
+    height: 500px;
+    background-image: url(kafeimg/homeScreen2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 300px;
+}
+h1{
+    color: white;
+    font-size: 3.5rem;
+    text-shadow: -10px 10px 15px brown;
+}
+.heading h2{
+    color: white;
+    font-style: italic;
+    font-size: 3rem;
+    text-shadow: -5px 5px 15px brown;
+    margin-top: 25px;
+}
+h2{
+    color: white;
+    font-style: italic;
+    font-size: 3rem;
+    text-shadow: -5px 5px 15px brown;
+    text-align: center;
+}
+.menu-section{
+    min-height: 1500px;
+    background: linear-gradient(#1b4d3e,#c9df8a);
+    max-width: 100%;
+    display: flex;
+    /**/flex-direction: column;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* sayfanın sola doğru genişlemesini önledi*/
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    bottom: 80px;   
+}
+.menu-content{
+    /*border: 2px solid white;*/
+    display: flex;
+    background-color: rgb(236, 234, 234);
+    border-radius: 50px;
+    width: 19%;
+    height: 400px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+button.shop-item-button{
+    margin-top: 10px;
+    background-color: #77ab59;
+    border-radius: 10%;
+}
+button.shop-item-button:hover{
+    background-color: #c9df8a;
+    transition: 0.3s;
+}
+.menu-content:hover{
+    box-shadow: 3px 3px 30px rgb(149, 7, 7);
+    transition: 0.4s;
+}
+.menu{
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 230px;
+    margin: 30px 35px 20px 25px; /*üst sağ? alt sol */
+}
+h4{
+    font-size: 23px;
+    text-align: center;
+    color: #000;
+}
+.menu-content p{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+span{
+    text-align: center;
+    color: orange;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid ;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 10px 700px 10px 600px;
+    font-size: 1.75em;
+    background-color: #1b4d3e;
+    border-radius: 5px;
+}
+.btn-purchase:hover{
+    background-color: #EB5757;
+    transition: 0.2s;
+}

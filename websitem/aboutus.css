@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li, a, button{
+    font-family: cursive;
+    font-size: 16px;
+    text-decoration: none; /*linklerin altındaki çizgi gitti*/
+    color: white;
+}
+header{
+    background-color: darkgray;
+    padding: 10px 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /*position: fixed; ?why is this b not working??? */
+}
+.logo{
+    width: 53px;
+    margin-right: auto;
+}
+.logoName{
+    margin-right: 950px;
+    font-size: 18px;
+    display: inline;
+}
+.nav__links{
+    list-style: none; /**/
+}
+.nav__links li{
+    display: inline-block; /*alt alta değil yan yana*/
+    padding: 10px 20px;
+}
+.nav__links li a{
+    transition: all 0.3s;
+}
+.nav__links li a:hover{
+    color: green
+}
+button{
+    padding: 8px 15px;
+    background-color: grey;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+    background-color: green;
+}
+button:hover{
+    background-color:  #a5bd64;
+}
+.footer{
+    height: 300px;
+    background-color: #234d20;
+    display: flex;
+    align-items: center;/*sütun ortası*/
+    justify-content: center; /*satır ortası*/
+    gap: 100px;
+    bottom: 0px;
+}
+.adres{
+    width: 240px;
+}
+.adres p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.saat{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.saat li{
+    color: black;
+}
+.box1{
+    background-color: #c9df8a;
+    display: flex;
+    flex-wrap: nowrap;
+    /*align-items: center;
+    justify-content: center;*/
+}
+.hikaye{
+    display: flex;
+    font-size: 24px;
+    width: 60%;
+    float: left;
+    padding: 90px 150px 50px 100px; /*üst sağ alt sol*/
+    text-indent: 20px; /*satır başı boşluğu*/
+    line-height: 25px;
+}
+.foto{
+    display: flex;
+    height: 550px;
+    width: 40%;
+    float: left;
+    margin: 50px 0px 50px 70px;
+}
+.foto img{
+    border-radius: 10px;
+}
+.ourstory{
+    margin: 40px 0 -15px 150px ; /*üst sağ alt sol*/
+    font-size: 60px;
+}
+.galeri{
+    display: grid;
+    grid-template-columns: repeat(3, 185px); /*fotoların 3e 3lük durmasını sağladı*/
+    justify-content: center; /*satır ortası*/
+    background-color: #77ab59;
+    padding: 65px;
+}
+.galeri img{
+    width: 180px;
+    height: 180px;
+}
